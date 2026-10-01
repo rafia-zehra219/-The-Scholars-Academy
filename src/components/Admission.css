@@ -1,0 +1,134 @@
+.admission-section {
+  padding: 90px 8%;
+  background: #fff7fb;
+}
+
+.admission-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 45px;
+}
+
+.admission-small-title {
+  color: #8b1e5d;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.admission-heading h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.admission-heading h2 span {
+  color: #8b1e5d;
+}
+
+.admission-heading p:last-child {
+  color: #666;
+  line-height: 1.7;
+}
+
+.admission-container {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.admission-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #8b1e5d;
+  box-shadow: 0 0 0 3px rgba(139, 30, 93, 0.08);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.admission-btn {
+  align-self: center;
+  margin-top: 10px;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #8b1e5d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admission-btn:hover {
+  background: #6f1649;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .admission-section {
+    padding: 60px 5%;
+  }
+
+  .admission-heading h2 {
+    font-size: 36px;
+  }
+
+  .admission-container {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .admission-btn {
+    width: 100%;
+  }
+}
